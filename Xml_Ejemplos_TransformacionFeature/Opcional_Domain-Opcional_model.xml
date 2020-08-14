@@ -1,0 +1,82 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="feature" parent="0"/>
+    <root label="ClothingStores" type="root" id="1">
+      <mxCell style="strokeWidth=3" vertex="1" parent="feature">
+        <mxGeometry x="320" y="30" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </root>
+    <abstract label="User" type="abstract" id="2">
+      <mxCell style="strokeWidth=2" vertex="1" parent="feature">
+        <mxGeometry x="320" y="120" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </abstract>
+    <concrete label="User model" type="concrete" selected="false" id="3">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="220" y="190" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Login" type="concrete" selected="false" id="4">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="320" y="240" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Account" type="concrete" selected="false" id="5">
+      <mxCell style="" vertex="1" parent="feature">
+        <mxGeometry x="450" y="180" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <rel_abstract_root type="relation" relType="optional" id="6">
+      <mxCell edge="1" parent="feature" source="2" target="1">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_abstract_root>
+    <rel_concrete_abstract type="relation" relType="optional" id="7">
+      <mxCell edge="1" parent="feature" source="3" target="2">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_abstract type="relation" relType="optional" id="8">
+      <mxCell edge="1" parent="feature" source="5" target="2">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_abstract type="relation" relType="mandatory" id="9">
+      <mxCell edge="1" parent="feature" source="4" target="2">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_abstract>
+    <rel_concrete_concrete type="relation" relType="requires" id="10">
+      <mxCell edge="1" parent="feature" source="5" target="4">
+        <mxGeometry relative="1" as="geometry"/>
+      </mxCell>
+    </rel_concrete_concrete>
+    <mxCell id="component" parent="0" visible="0"/>
+    <mxCell id="binding_feature_component" parent="0" visible="0"/>
+    <concrete label="User model" type="concrete" selected="false" id="clon3">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="220" y="190" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Login" type="concrete" selected="false" id="clon4">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="390" y="190" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <concrete label="Account" type="concrete" selected="false" id="clon5">
+      <mxCell style="fillColor=#DCDCDC;" vertex="1" parent="binding_feature_component">
+        <mxGeometry x="530" y="190" width="100" height="35" as="geometry"/>
+      </mxCell>
+    </concrete>
+    <mxCell id="istar" parent="0" visible="0"/>
+    <mxCell id="classdiag" parent="0" visible="0"/>
+    <mxCell id="adap_architecture" parent="0" visible="0"/>
+    <mxCell id="adaptation_hardware" parent="0" visible="0"/>
+    <mxCell id="adaptation_behavior_hardware" parent="0" visible="0"/>
+    <mxCell id="adaptation_state" parent="0" visible="0"/>
+    <mxCell id="adaptation_behavior_states" parent="0" visible="0"/>
+    <mxCell id="adaptation_behavior_transitions" parent="0" visible="0"/>
+    <mxCell id="control" parent="0" visible="0"/>
+  </root>
+</mxGraphModel>
